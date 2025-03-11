@@ -25,7 +25,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://3.39.193.117:8000/upload-pdf", {
+      const response = await fetch("/api/upload-pdf", {
         method: "POST",
         body: formData,
       });
