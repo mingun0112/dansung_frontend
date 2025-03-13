@@ -25,7 +25,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("/api/upload-pdf", {
+      const response = await fetch("https://api-dansung-back.shop/upload-pdf/", {
         method: "POST",
         body: formData,
       });
